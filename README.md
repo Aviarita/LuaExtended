@@ -61,6 +61,8 @@ As of right now, LuaExtended contains the following improvements over the defaul
 # Installation
 You can now use [Package Control](https://packagecontrol.io/) to install [LuaExtended](https://packagecontrol.io/packages/LuaExtended). Simply type "install" in the Command Palette (<kbd>Ctrl + Shift + P</kbd>) to [find](https://i.imgur.com/XnYlj0y.gif) the [`Package Control: Install Package`](https://packagecontrol.io/docs/usage) command. Wait for the repository lists to load
 
+For the custom version i made that includes the gamesense api you install it by drag and droping the file from the release section into C:\Users\<user>\AppData\Roaming\Sublime Text 3\Installed Packages
+
 ![](https://i.imgur.com/tyDRMgP.png)
 
 and search for 'LuaExtended'. Alternatively, you can clone this repository into your `Data/User` folder (either in the install directory, in `%appdata%/Sublime Text 3` on Windoze, or wherever else other environments put it).
