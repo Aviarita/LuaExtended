@@ -134,5 +134,82 @@
 		{ "trigger": "debug_setmetatable( object, table )", "contents": "debug.setmetatable( ${1:object}, ${2:table} )" },
 		{ "trigger": "debug_setupvalue( func, up, value )", "contents": "debug.setupvalue( ${1:func}, ${2:up}, ${3:value} )" },
 		{ "trigger": "debug_traceback( thread, message, level )", "contents": "debug.traceback( ${1:thread}, ${2:message}, ${3:level} )" },
+
+
+		// Gamesense api
+		{ "trigger": "client.set_event_callback(event_name, callback)", "contents": "client.set_event_callback(${1:event_name}, ${2:callback})" },
+		
+		{ "trigger": "client.log(msg, ...)", "contents": "client.log(${1:msg}, ${2:...})" },
+		{ "trigger": "client.color_log(r, g, b, msg, ..)", "contents": "client.color_log(${1:r}, ${2:g}, ${3:b}, ${4:msg}, ${5:...})" },
+		
+		{ "trigger": "client.exec(cmd, ...)", "contents": "client.exec(${1:cmd}, ${2:...})" },
+		{ "trigger": "client.userid_to_entindex(entity_index)", "contents": "client.userid_to_entindex(${1:entity_index})" },
+
+		{ "trigger": "client.random_int(minimum, maximum)", "contents": "client.random_int(${1:minimum}, ${2:maximum})" },
+		{ "trigger": "client.random_float(minimum, maximum)", "contents": "client.random_float(${1:minimum}, ${2:maximum})" },
+		
+		{ "trigger": "client.get_cvar(cvar_name)", "contents": "client.get_cvar(${1:cvar_name})" },
+		{ "trigger": "client.set_cvar(cvar_name, value)", "contents": "client.set_cvar(${1:cvar_name}, ${2:value})" },
+		
+		{ "trigger": "client.draw_hitboxes(entindex, duration, hitboxes, r, g, b)", "contents": "client.draw_hitboxes(${1:entindex}, ${2:duration}, ${3:hitboxes}, ${4:r}, ${5:g}, ${6:b})" },
+		{ "trigger": "client.draw_debug_text(x, y, z, line_offset, duration, r, g, b, a, ...)", "contents": "client.draw_debug_text(${1:x}, ${2:y}, ${3:z}, ${4:line_offset}, ${5:duration}, ${6:r}, ${7:g}, ${8:b}, ${9:a}, ${10:...})" },
+		{ "trigger": "client.draw_text(paint_ctx, x, y, r, g, b, a, flags, max_width, ...)", "contents": "client.draw_text(${1:paint_ctx}, ${2:x}, ${3:y}, ${4:r}, ${5:g}, ${6:b}, ${7:a}, ${8:flags}, ${9:max_width}, ${10:...})" },
+		{ "trigger": "client.draw_rectangle(paint_ctx, x, y, w, h, r, g, b, a)", "contents": "client.draw_rectangle(${1:paint_ctx}, ${2:x}, ${3:y}, ${4:w}, ${5:h}, ${6:r}, ${7:g}, ${8:b}, ${9:a})" },
+		{ "trigger": "client.draw_line(paint_ctx, xa, ya, xb, yb, r, g, b, a)", "contents": "client.draw_line(${1:paint_ctx}, ${2:xa}, ${3:ya}, ${4:xb}, ${5:yb}, ${6:r}, ${7:g}, ${8:b}, ${9:a})" },
+		{ "trigger": "client.draw_gradient(paint_ctx, x, y, w, h, r1, g1, b1, a1, r2, g2, b2, a2, ltr)", "contents": "client.draw_gradient(${1:paint_ctx},${2:x},${3:y},${4:w},${5:h},${6:r1},${7:g1},${8:b1},${9:a1},${10:r2},${11:g2},${12:b2},${13:a2},${14:ltr},)" },
+		{ "trigger": "client.draw_circle(paint_ctx, x, y, r, g, b, a, radius, start_degrees, percentage)", "contents": "client.draw_circle(${1:paint_ctx}, ${2:x}, ${3:y}, ${4:r}, ${5:g}, ${6:b}, ${7:a}, ${8:radius}, ${9:start_degrees}, ${10:percentage})" },
+		{ "trigger": "client.draw_circle_outline(paint_ctx, x, y, r, g, b, a, radius, start_degrees, percentage, thickness)", "contents": "client.draw_circle_outline(${1:paint_ctx}, ${2:x}, ${3:y}, ${4:r}, ${5:g}, ${6:b}, ${7:a}, ${8:radius}, ${9:start_degrees}, ${10:percentage}, ${11:thickness})" },
+		{ "trigger": "client.draw_indicator(paint_ctx, r, g, b, a, ...)", "contents": "client.draw_indicator(${1:paint_ctx}, ${2:r}, ${3:g}, ${4:b}, ${5:a}, ${6:...})" },
+		
+		{ "trigger": "client.world_to_screen(paint_ctx, x, y, z)", "contents": "client.world_to_screen(${1:paint_ctx}, ${2:x}, ${3:y}, ${4:z})" },
+		{ "trigger": "client.timestamp()", "contents": "client.timestamp()" },
+		{ "trigger": "client.screen_size()", "contents": "client.screen_size()" },
+		{ "trigger": "client.latency()", "contents": "client.latency()" },
+		{ "trigger": "client.camera_angles()", "contents": "client.camera_angles()" },
+		{ "trigger": "client.eye_position()", "contents": "client.eye_position()" },
+		{ "trigger": "client.visible(x, y, z)", "contents": "client.visible(${1:x}, ${2:y}, ${3:z})" },
+		{ "trigger": "client.trace_line(skip_entindex, from_x, from_y, from_z, to_x, to_y, to_z)", "contents": "client.trace_line(${1:skip_entindex}, ${2:from_x}, ${3:from_y}, ${4:from_z}, ${5:to_x}, ${6:to_y}, ${7:to_z})" },
+		{ "trigger": "client.delay_call(delay, callback, ...)", "contents": "client.delay_call(${1:delay}, ${2:callback}, ${3:...})" },
+
+		{ "trigger": "entity.get_local_player()", "contents": "entity.get_local_player()" },
+		{ "trigger": "entity.get_all(classname)", "contents": "entity.get_all(${1:classname})" },
+		{ "trigger": "entity.get_players(enemies_only)", "contents": "entity.get_players(${1:enemies_only})" },
+		{ "trigger": "entity.get_classname(entity)", "contents": "entity.get_classname(${1:entity})" },
+
+		{ "trigger": "entity.get_prop(ent, propname, array_index)", "contents": "entity.get_prop(${1:ent}, ${2:propname}, ${3:array_index})" },
+		{ "trigger": "entity.set_prop(ent, propname, value, array_index)", "contents": "entity.set_prop(${1:ent}, ${2:propname}, ${3:value}, ${4:array_index})" },
+
+		{ "trigger": "entity.is_alive(entity)", "contents": "entity.is_alive(${1:entity})" },
+		{ "trigger": "entity.is_enemy(entity)", "contents": "entity.is_enemy(${1:entity})" },
+		{ "trigger": "entity.get_player_name(entity)", "contents": "entity.get_player_name(${1:entity})" },
+		{ "trigger": "entity.get_player_weapon(entity)", "contents": "entity.get_player_weapon(${1:entity})" },
+		{ "trigger": "entity.hitbox_position(player, hitbox)", "contents": "entity.hitbox_position(${1:player}, ${2:hitbox})" },
+		{ "trigger": "entity.get_steam64(player)", "contents": "entity.get_steam64(${1:player})" },
+		{ "trigger": "entity.get_bounding_box(paint_ctx, entity_index)", "contents": "entity.get_bounding_box(${1:paint_ctx}, ${2:entity_index})" },
+
+		{ "trigger": "globals.realtime()", "contents": "globals.realtime()" },
+		{ "trigger": "globals.curtime()", "contents": "globals.curtime()" },
+		{ "trigger": "globals.absoluteframetime()", "contents": "globals.absoluteframetime()" },
+		{ "trigger": "globals.frametime()", "contents": "globals.frametime()" },
+		{ "trigger": "globals.framecount()", "contents": "globals.framecount()" },
+		{ "trigger": "globals.maxplayers()", "contents": "globals.maxplayers()" },
+		{ "trigger": "globals.tickcount()", "contents": "globals.tickcount()" },
+		{ "trigger": "globals.tickinterval()", "contents": "globals.tickinterval()" },
+		{ "trigger": "globals.mapname()", "contents": "globals.mapname()" },
+
+		{ "trigger": "ui.reference(tab, container, name)", "contents": "ui.reference(${1:tab}, ${2:container}, ${3:name})" },
+		{ "trigger": "ui.new_checkbox(tab, container, name)", "contents": "ui.new_checkbox(${1:tab}, ${2:container}, ${3:name})" },
+		{ "trigger": "ui.new_hotkey(tab, container, name)", "contents": "ui.new_hotkey(${1:tab}, ${2:container}, ${3:name})" },
+		{ "trigger": "ui.new_button(tab, container, name, callback)", "contents": "ui.new_button(${1:tab}, ${2:container}, ${3:name}, ${4:callback})" },
+		{ "trigger": "ui.new_slider(tab, container, name, min, max, init_value, show_tooltip, unit, scale, tooltips)", "contents": "ui.new_slider(${1:tab}, ${2:container}, ${3:name}, ${4:min}, ${5:max}, ${6:init_value}, ${7:show_tooltip}, ${8:unit}, ${9:scale}, ${10:tooltips})" },
+		{ "trigger": "ui.new_combobox(tab, container, name, ...)", "contents": "ui.new_combobox(${1:tab}, ${2:container}, ${3:name}, ${4:...})" },
+		{ "trigger": "ui.new_multiselect(tab, container, name, ...)", "contents": "ui.new_multiselect(${1:tab}, ${2:container}, ${3:name}, ${4:...})" },
+		{ "trigger": "ui.new_color_picker(tab, container, name, r, g, b, a)", "contents": "ui.new_color_picker(${1:tab}, ${2:container}, ${3:name}, ${4:r}, ${5:g}, ${6:b}, ${7:a})" },
+
+		{ "trigger": "ui.set(item, value, ...)", "contents": "ui.set(${1:item}, ${2:value}, ${3:...})" },
+		{ "trigger": "ui.get(item)", "contents": "ui.get(${1:item})" },
+		{ "trigger": "ui.set_callback(item, callback)", "contents": "ui.set_callback(${1:item}, ${2:callback})" },
+		{ "trigger": "ui.set_visibleitem, visible)", "contents": "ui.set_visible(${1:item}, ${2:visible})" },
+		{ "trigger": "ui.is_menu_open()", "contents": "ui.is_menu_open()" },
 	]
 }
