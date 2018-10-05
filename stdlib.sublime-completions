@@ -156,7 +156,7 @@
 		{ "trigger": "client.draw_text(paint_ctx, x, y, r, g, b, a, flags, max_width, ...)", "contents": "client.draw_text(${1:paint_ctx}, ${2:x}, ${3:y}, ${4:r}, ${5:g}, ${6:b}, ${7:a}, ${8:flags}, ${9:max_width}, ${10:...})" },
 		{ "trigger": "client.draw_rectangle(paint_ctx, x, y, w, h, r, g, b, a)", "contents": "client.draw_rectangle(${1:paint_ctx}, ${2:x}, ${3:y}, ${4:w}, ${5:h}, ${6:r}, ${7:g}, ${8:b}, ${9:a})" },
 		{ "trigger": "client.draw_line(paint_ctx, xa, ya, xb, yb, r, g, b, a)", "contents": "client.draw_line(${1:paint_ctx}, ${2:xa}, ${3:ya}, ${4:xb}, ${5:yb}, ${6:r}, ${7:g}, ${8:b}, ${9:a})" },
-		{ "trigger": "client.draw_gradient(paint_ctx, x, y, w, h, r1, g1, b1, a1, r2, g2, b2, a2, ltr)", "contents": "client.draw_gradient(${1:paint_ctx},${2:x},${3:y},${4:w},${5:h},${6:r1},${7:g1},${8:b1},${9:a1},${10:r2},${11:g2},${12:b2},${13:a2},${14:ltr},)" },
+		{ "trigger": "client.draw_gradient(paint_ctx, x, y, w, h, r1, g1, b1, a1, r2, g2, b2, a2, ltr)", "contents": "client.draw_gradient(${1:paint_ctx}, ${2:x}, ${3:y}, ${4:w}, ${5:h}, ${6:r1}, ${7:g1}, ${8:b1}, ${9:a1}, ${10:r2}, ${11:g2}, ${12:b2}, ${13:a2}, ${14:ltr},)" },
 		{ "trigger": "client.draw_circle(paint_ctx, x, y, r, g, b, a, radius, start_degrees, percentage)", "contents": "client.draw_circle(${1:paint_ctx}, ${2:x}, ${3:y}, ${4:r}, ${5:g}, ${6:b}, ${7:a}, ${8:radius}, ${9:start_degrees}, ${10:percentage})" },
 		{ "trigger": "client.draw_circle_outline(paint_ctx, x, y, r, g, b, a, radius, start_degrees, percentage, thickness)", "contents": "client.draw_circle_outline(${1:paint_ctx}, ${2:x}, ${3:y}, ${4:r}, ${5:g}, ${6:b}, ${7:a}, ${8:radius}, ${9:start_degrees}, ${10:percentage}, ${11:thickness})" },
 		{ "trigger": "client.draw_indicator(paint_ctx, r, g, b, a, ...)", "contents": "client.draw_indicator(${1:paint_ctx}, ${2:r}, ${3:g}, ${4:b}, ${5:a}, ${6:...})" },
@@ -209,7 +209,7 @@
 		{ "trigger": "ui.set(item, value, ...)", "contents": "ui.set(${1:item}, ${2:value}, ${3:...})" },
 		{ "trigger": "ui.get(item)", "contents": "ui.get(${1:item})" },
 		{ "trigger": "ui.set_callback(item, callback)", "contents": "ui.set_callback(${1:item}, ${2:callback})" },
-		{ "trigger": "ui.set_visibleitem, visible)", "contents": "ui.set_visible(${1:item}, ${2:visible})" },
+		{ "trigger": "ui.set_visible(item, visible)", "contents": "ui.set_visible(${1:item}, ${2:visible})" },
 		{ "trigger": "ui.is_menu_open()", "contents": "ui.is_menu_open()" },
 	]
 }
